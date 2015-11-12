@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    nimble-api (0.1.4)
+    nimble-api (0.1.5)
       chronic (~> 0.10)
       faraday (~> 0.8)
       json (~> 1.7)
