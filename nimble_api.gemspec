@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.authors          = ["Brian Wilkerson"]
   spec.email            = "brian@taskit.io"
 
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = ["Gemfile", "Gemfile.lock", "README.md", "Rakefile", "lib/nimble-api.rb", "lib/nimble/base.rb", "lib/nimble/contact.rb", "lib/nimble/contacts.rb", "lib/nimble/metadata.rb", "lib/nimble/version.rb", "nimble_api.gemspec", "spec/integration/contact_spec.rb", "spec/integration/contacts_spec.rb", "spec/integration/metadata_spec.rb", "spec/spec_helper.rb", "spec/unit/base_spec.rb"]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
