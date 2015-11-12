@@ -13,7 +13,7 @@ module NimbleApi
       @conn = Faraday.new(:url => "https://#{NimbleApi.host}" ) do |faraday|
         faraday.request  :url_encoded             # form-encode POST params
         faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
-        # faraday.use Faraday::Response::RaiseError       # raise exceptions on 40x, 50x responses
+        faraday.use Faraday::Response::RaiseError       # raise exceptions on 40x, 50x responses
       end
       self.refresh
     end
